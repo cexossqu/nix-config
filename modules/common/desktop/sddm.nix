@@ -15,7 +15,7 @@
   };
 in {
   services.displayManager.sddm = {
-    enable = true;
+    enable = false;
     wayland.enable = true;
     enableHidpi = true;
     theme = "sddm-astronaut-theme";
