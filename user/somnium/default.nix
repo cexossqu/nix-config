@@ -1,9 +1,11 @@
-
-{ config, lib, pkgs, inputs, ... }:
-
 {
-
-#  imports = lib.custom.scanPaths ./.;
+  config,
+  lib,
+  pkgs,
+  inputs,
+  ...
+}: {
+  #  imports = lib.custom.scanPaths ./.;
   imports = [
     ./hjem.nix
     ./zsh
@@ -15,19 +17,16 @@
       home = "/home/somnium";
       uid = 1000;
       group = "somnium";
-      extraGroups = [ "wheel" "video" "networkmanager" ]; # Enable ‘sudo’ for the user.
+      extraGroups = ["wheel" "video" "networkmanager" "docker"]; # Enable ‘sudo’ for the user.
       packages = with pkgs; [
         tree
       ];
     };
     groups = {
       somnium = {
-        members = [ "somnium" ];
+        members = ["somnium"];
         gid = 1000;
       };
     };
   };
-
-
 }
-
