@@ -13,7 +13,7 @@
     fcitx5.waylandFrontend = true;
     fcitx5.addons = with pkgs; [
       fcitx5-lua
-      fcitx5-gtk
+      # fcitx5-gtk
       fcitx5-mozc
       kdePackages.fcitx5-configtool
       kdePackages.fcitx5-chinese-addons
