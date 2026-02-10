@@ -10,7 +10,7 @@
     ./../../user/${username}
     ./../../overlay
     ./../../modules/flatpak.nix
-    ./steam.nix
+    #    ./steam.nix
   ];
 
   powerManagement.cpuFreqGovernor = "performance";
