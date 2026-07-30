@@ -18,5 +18,6 @@
     kdePackages.dolphin
     unzip
     wev
+    inputs.llm-agents.packages."${stdenv.hostPlatform.system}".kimi-code
   ];
 }
