@@ -1,7 +1,7 @@
 { pkgs, ... }:
 {
-  wrappers.neofetch = {
-    basePackage = pkgs.neofetch.override { x11Support = false; };
+  wrappers.fastfetch = {
+    basePackage = pkgs.fastfetch.override { x11Support = false; };
     prependFlags = [
       "--config"
       ./config.sh
