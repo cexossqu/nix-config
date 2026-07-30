@@ -48,7 +48,7 @@
       config = {
       allowUnfree = true;
       nvidia.acceptLicense = false;
-      problems.handlers = nvidia-x11.broken = "warn"; # or "ignore"
+      problems.handlers.nvidia-x11.broken = "warn"; # or "ignore"
       };
       overlays = [
       ];
