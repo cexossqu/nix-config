@@ -70,7 +70,7 @@ input {
 // https://yalter.github.io/niri/Configuration:-Outputs
 // Remember to uncomment the node by removing "/-"!
 output "DP-1" {
-    mode "2560x1440@165.001"
+    mode "2560x1440@165.000"
 
     scale 1.25
 

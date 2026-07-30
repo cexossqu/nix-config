@@ -17,5 +17,6 @@
     wpsoffice-cn
     kdePackages.dolphin
     unzip
+    wev
   ];
 }
