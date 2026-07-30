@@ -6,8 +6,8 @@
    environment.systemPackages = with pkgs; [
     xwayland
     xwayland-run
-    xorg.xsetroot
-    xorg.libxcb
+    xsetroot
+    libxcb
     swaybg
     base16-schemes
     #xwaylandvideobridge

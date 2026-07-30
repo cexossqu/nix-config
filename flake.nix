@@ -47,7 +47,7 @@
       inherit system;
       config.allowUnfree = true;
       config.nvidia.acceptLicense = true;
-                 problems.handlers = {
+                 config.problems.handlers = {
              nvidia-x11.broken = "warn"; # or "ignore"
            };
 
