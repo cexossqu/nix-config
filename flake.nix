@@ -47,12 +47,13 @@
       inherit system;
       config.allowUnfree = true;
       config.nvidia.acceptLicense = true;
-                 config.problems.handlers = {
-             nvidia-x11.broken = "warn"; # or "ignore"
-           };
 
       overlays = [
       ];
+
+                problems.handlers = {
+             nvidia-x11.broken = "warn"; # or "ignore"
+           };
     };
     lib = nixpkgs.lib.extend (self: super: {custom = import ./lib {inherit (nixpkgs) lib;};});
     username = "somnium";
