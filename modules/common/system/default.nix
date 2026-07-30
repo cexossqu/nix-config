@@ -18,6 +18,7 @@
     };
   };
   nixpkgs.config.allowUnfree = true;
+  nixpkgs.config.problems.handlers.nvidia-x11.broken = "warn"; # or "ignore"
   nixpkgs.config.nvidia.acceptLicense = true;
   # Use the systemd-boot EFI boot loader.
   boot.loader.systemd-boot.enable = true;
