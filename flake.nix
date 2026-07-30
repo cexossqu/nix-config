@@ -45,11 +45,11 @@
     system = "x86_64-linux";
     pkgs = import nixpkgs {
       inherit system;
-      config.allowUnfree = true;
-      config.nvidia.acceptLicense = false;
-                config.problems.handlers = {
-             nvidia-x11.broken = "warn"; # or "ignore"
-           };
+      config = {
+      allowUnfree = true;
+      nvidia.acceptLicense = false;
+      problems.handlers = nvidia-x11.broken = "warn"; # or "ignore"
+      };
       overlays = [
       ];
 
